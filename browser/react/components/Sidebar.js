@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 
 const Sidebar = (props) => {
-
 	return (
 		<sidebar>
 			<img src="juke.svg" className="logo" />
