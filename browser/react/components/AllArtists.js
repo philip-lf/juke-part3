@@ -21,13 +21,13 @@ export default class AllArtists extends Component {
 
 	handleChange(event) {
 		this.setState({
-			inputValue: event.target.value.toUpperCase()
+			inputValue: event.target.value.toLowerCase()
 		});
 	}
 
 	render() {
 		
-		const artists = this.state.artists.filter(artist => artist.name.toUpperCase().match(this.state.inputValue));
+		const artists = this.state.artists.filter(artist => artist.name.toLowerCase().match(this.state.inputValue));
 		// console.log(this.state.inputValue) 
 		// console.log(this.state.artists)
 		
